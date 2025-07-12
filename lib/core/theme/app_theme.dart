@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 
-class AppTheme {
-  static const Color primaryGreen = Color(0xFF137333);
+class AppColors {
+  static const Color green = Color(0xFF13B94B);
+}
 
+class AppTheme {
   static ThemeData get themeData => ThemeData(
-    primaryColor: primaryGreen,
+    primaryColor: AppColors.green,
     colorScheme: ColorScheme.fromSwatch().copyWith(
-      primary: primaryGreen,
-      secondary: primaryGreen,
+      primary: AppColors.green,
+      secondary: AppColors.green,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: primaryGreen,
+        backgroundColor: AppColors.green,
         foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(foregroundColor: primaryGreen),
+      style: TextButton.styleFrom(foregroundColor: AppColors.green),
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
